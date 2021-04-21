@@ -3,8 +3,9 @@ import { GetServerSideProps } from "next";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
+
 type Props = {
-  allUsers: [{ content: string; name: string; }];
+  allUsers: [{ content: string; name: string }];
 };
 
 export const Home: React.FC<Props> = (props) => {
